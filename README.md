@@ -4,7 +4,7 @@ This package extends atom's native settings with language-dependant settings app
 
 Usage:
  - start typing `language settings` in your command palette (`cmd+shift+p`), you'll see a list of grammars which settings you can edit
- - `language settings: current` command detects syntax used in the current file and opens it for edition
+ - `language settings: current` command detects syntax used in the current file and opens it for editing
  - you can also access it from the menu: `packages->language settings`
 
 Settings are stored in `~/.atom/language-settings/<grammar>.cson` files.
