@@ -1,7 +1,7 @@
 {
   "name": "language-syntax-settings",
   "main": "./lib/language-settings",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Syntax-specific editor settings",
   "repository": "https://github.com/ardcore/atom-language-settings",
   "license": "MIT",
