@@ -1,0 +1,34 @@
+{
+  "name": "language-syntax-settings",
+  "main": "./lib/language-settings",
+  "version": "0.1.0",
+  "description": "Syntax-specific editor settings",
+  "repository": "https://github.com/ardcore/atom-language-settings",
+  "license": "MIT",
+  "keywords": [
+    "settings",
+    "syntax",
+    "language",
+    "grammar",
+    "specific",
+    "context"
+  ],
+  "bugs": {
+    "url": "https://github.com/ardcore/atom-language-settings/issues",
+    "email": "szymon.pilkowski@gmail.com"
+  },
+  "author": {
+    "name": "Szymon Pilkowski",
+    "email": "szymon.pilkowski@gmail.com",
+    "url": "http://twitter.com/ard"
+  },
+  "readmeFilename": "README.md",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "cson": "~1.4.5",
+    "underscore": "~1.6.0",
+    "jsesc": "~0.4.3"
+  }
+}
