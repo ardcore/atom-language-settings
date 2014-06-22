@@ -1,6 +1,7 @@
 # coffeelint: disable=max_line_length
 fs = require 'fs'
-cson = require 'cson'
+{allowUnsafeEval} = require 'loophole'
+cson = allowUnsafeEval -> require 'cson'
 _ = require 'underscore'
 jsesc = require 'jsesc'
 
