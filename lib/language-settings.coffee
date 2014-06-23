@@ -1,6 +1,7 @@
 # coffeelint: disable=max_line_length
 fs = require 'fs'
-cson = require 'cson'
+{allowUnsafeEval} = require 'loophole'
+cson = allowUnsafeEval -> require 'cson'
 _ = require 'underscore'
 jsesc = require 'jsesc'
 
@@ -28,7 +29,7 @@ module.exports =
         baseJson = _.extend(defaults, baseJson.editor)
         for key, value of baseJson
           atom.config.set "editor." + key, value
-        atom.project.openers[0](uri) # FIXME: hack
+        atom.workspace.openers[0](uri) # FIXME: hack
 
     if not fs.existsSync @grammarDir
       fs.mkdirSync(@grammarDir)
